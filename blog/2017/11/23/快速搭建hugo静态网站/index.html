@@ -6,15 +6,15 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FAQ</title>
+  <title>快速搭建Hugo静态网站</title>
   <meta name="author" content="" />
 
   
-  <meta name="keywords" content="提问, 我怎样做, 问题, 如果……怎么样">
+  <meta name="keywords" content="tsui, hugo, go">	
   
 
   
-  <meta name="description" content="常见问题">
+  <meta name="description" content="Stop struggling, life has stopped.">	
   
 
   <meta name="generator" content="Hugo 0.30.2" />
@@ -56,9 +56,9 @@
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Tsui&#39;s Site | Make Different">
 
   
-  <meta property="og:title" content="FAQ" />
+  <meta property="og:title" content="快速搭建Hugo静态网站" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/faq//" />
+  <meta property="og:url" content="/blog/2017/11/23/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAhugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -77,9 +77,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="FAQ logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="FAQ logo" class="visible-xs visible-sm">
-                    <span class="sr-only">FAQ - go to homepage</span>
+                    <img src="/img/logo.png" alt="快速搭建Hugo静态网站 logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="快速搭建Hugo静态网站 logo" class="visible-xs visible-sm">
+                    <span class="sr-only">快速搭建Hugo静态网站 - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -152,7 +152,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>FAQ</h1>
+                <h1>快速搭建Hugo静态网站</h1>
             </div>
         </div>
     </div>
@@ -160,76 +160,226 @@
 
 
         <div id="content">
-            
-
             <div class="container">
 
                 <div class="row">
 
-                    <div class="col-md-12">
+                    
 
-                        <div>
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">November 23, 2017</p>
+
+                        <div id="post-content">
                           
 
-<p>人的好奇心总是无穷尽的，进到这么好看的一个个人网站，你心中一定有不少问题想问，希望自己也能做出一个这么酷炫的网站出来。如果你和我一样不是科班出身，但是对这块内容有着浓厚的兴趣，而且有一定的动手、动脑和搜索能力，那么，我相信一星期内你也能做出一个像我这样甚至更好的看的网站出来。下面我会分享几个常见的问题，避免入坑。</p>
+<h2 id="前言小叙">前言小叙</h2>
 
-<h2 id="1-建设一个这样的网站需要哪些基本条件">1、建设一个这样的网站需要哪些基本条件？</h2>
+<p>从最开始接触GitHub和静态网站搭建到现在应该也有一两个月了，从一名菜鸟开始摩拳擦掌准备上路了。首先折腾的是通过hexo搭建自己的博客，而且通过好几个星期的摸索，也搭建起了一个有模有样的博客，陆陆续续在上面发布了四五篇文章。但是，几天后当我再次在terminal输入hexo命令时，居然提示无效。顿时一凉，知道麻烦又来了，这是hexo的配置环境出问题了，几乎隔三差五都会出现一次，每次都要花上不少时间去重新配置，这样一来就失去了写博客本身的乐趣了。于是，一怒之下转到了Hugo平台，之前写的几篇文章也没保存了。</p>
+
+<p>闲言少叙，主要说说通过Hugo搭建静态网站的基本过程。</p>
+
+<h2 id="前提条件">前提条件</h2>
+
+<p>我是在Mac系统下操作的，首先Hugo的安装相比hexo来说简单多了，通过brew命令.</p>
+
+<p>1.先安装brew</p>
+
+<pre><code>$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<p>2.再安装Hugo</p>
+
+<pre><code>$ brew new Hugo
+</code></pre>
+
+<p>3.建立自己的网站，我这里本地文件夹名称用的是hugo（在你的用户名文件夹的根目录下），可自行修改</p>
+
+<pre><code>$ hugo new site mysite
+</code></pre>
+
+<p>然后在本地Hugo文件夹中就会出现以下目录文件</p>
+
+<pre><code> ▸ archetypes/ 
+ ▸ content/
+ ▸ data/ 
+ ▸ layouts/
+ ▸ static/
+ ▸ themes/
+</code></pre>
+
+<p>这几个文件夹的作用分别是：</p>
 
 <ul>
-<li>懂一点<a href="https://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwi86ty-2szXAhVIvLwKHfbeBgsQFggzMAE&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMarkdown&amp;usg=AOvVaw29vUwtb3gVG6rhYhCaDfbr">markdown</a></li>
-<li>有翻越“伟大的城墙”的工具；</li>
-<li>英文能力能够阅读基本的说明文档；</li>
-<li>看到代码等计算机相关的术语和元素不晕头；</li>
-<li>不懂就问、肯琢磨问题、会使用Google搜索；</li>
-<li>其他的想到了再补充。</li>
+<li>archetypes：包括内容类型，在创建新内容时自动生成内容的配置</li>
+<li>content：包括网站内容，全部使用markdown格式</li>
+<li>data: 包括网站模版的一些数据，有的模版没有</li>
+<li>layouts：包括了网站的模版，决定内容如何呈现</li>
+<li>static：包括了css, js, fonts, media等，决定网站的外观</li>
+<li>themes：存放网站模版，也就是主题的位置</li>
 </ul>
 
-<h2 id="2-这个网站用到了哪些软件或服务">2、这个网站用到了哪些软件或服务？</h2>
+<p>注意下，这个时候里面没有config.toml这个文件，怎么解决后面会说到</p>
 
-<ul>
-<li>个人域名<a href="https://www.godaddy.com/">GoDaddy</a></li>
-<li>建站工具<a href="https://gohugo.io/">Hugo</a>；</li>
-<li>网站内容托管服务器<a href="https://github.com/">GitHub</a>；</li>
-<li>内容编辑软件<a href="https://macdown.uranusjr.com/">MacDown</a></li>
-<li>内容上传工具<a href="https://www.sourcetreeapp.com/">SourceTree</a>；</li>
-<li>具体怎么使用到对应网址里面去学习官方文档吧。</li>
-</ul>
+<h2 id="安装主题">安装主题</h2>
 
-<h2 id="3-你建设这样一个网站的目的是什么">3、你建设这样一个网站的目的是什么？</h2>
+<p>1.先到<a href="https://themes.gohugo.io/">这个地址</a>选一个自己喜欢的模版，里面的主题数量也不少，对于一般的爱好者来说足够了，如果你有能力也可以自己写一个。在选中的模版里面有个说明文件的，安装方法很简单。</p>
 
-<p>我是一名文科生，建设个人网站完全是出于个人兴趣，难道你不觉得拥有一个自己的网站是一件很酷的事吗？其实第一次接触建站是在大学的dreamweaver课堂上，但那时候还只是初步觉得原来通过一些看起来枯燥的数字和符号就能够转化出这么直观的内容。自己第一次上手操作是在2012年和小伙伴一起创业时做自己的官网，把自己关在房间里捣鼓了整整一个星期，弄出了一个还算像样的网站，可惜那个现在网站没运营了。但通过那次捣鼓开始接触了div、css、js等非常有用的技术。中间也尝试过用Wordpress建站，但由于繁琐就搁置了。前阵子心血来潮买了一个十年期限的域名<a href="https://xtsui.com">xtsui.com</a>，想着这事不能再拖了，于是开始琢磨和研究，就捣鼓出了现在的网站，主要用来记录和分享，希望能打造出一个自己的品牌。</p>
+<p>2.首先在terminal里面进到刚创建的网站目录，比如我的是hugo：</p>
 
-<h2 id="4-建设一个这样的网站需要花多长时间">4、建设一个这样的网站需要花多长时间？</h2>
+<pre><code>$ cd hugo
+</code></pre>
 
-<p>这要看你想达到什么样的效果，如果只是搭建起基本的框架，包括运行环境、主题、logo设计、购买域名、上传基本内容到GitHub等，类似房屋装修的毛坯一样，看个人能力，一星期内基本足够。但是如果需要完善的有血有肉有个性的话，那就需要慢慢打磨了。我在写下这个页面时就处于“毛坯”状态。不过，这样一来也就有乐趣了，因为你看到每次改完后的效果会有一种小小的成就感。</p>
+<p>然后再cd到主题安装目录：</p>
 
-<h2 id="5-能否简单介绍下你自己">5. 能否简单介绍下你自己？</h2>
+<pre><code>$ cd themes
+</code></pre>
 
-<ul>
-<li>1990年生人，但不喜欢被贴上“90后”的标签，双子座，有自己的想法；</li>
-<li>传媒专业毕业，干过媒体，有过创业，现正行走在实现自由人生的道路上；</li>
-<li>籍贯湖南，有着湘军的特点“霸得蛮”，怀着一颗“初生牛犊不怕虎”的心，勇闯天涯；</li>
-<li>目前主要从事主持工作，坐标杭州，业余做一做播音主持相关的培训工作；</li>
-<li>目前掌握了中、英、法三门语言，虽然法语仍在继续学习当中，但基本的交流已无大碍；</li>
-<li>逐渐成为一名极简主义者，希望在10年内能创立自己的品牌，至于是什么，天晓得。</li>
-</ul>
+<p>最后在这个路径下，用一下命令来安装你所选中的主题，比如我的是universal主题：</p>
 
-<hr />
+<pre><code>$ git clone https://github.com/devcows/hugo-universal-theme
+</code></pre>
 
-<blockquote>
-<p>如果你没有找到自己想要的答案，请不要犹豫，马上联系吧，我很高兴为你“排忧解难”。</p>
-</blockquote>
+<p>3.回到你的hugo目录下的themes目录，你会看到这个主题文件已经下载好了。比如我的就会出现“hugo-universal-theme”这样的文件夹，为了以后修改方便，我将“hugo-universal-theme”名称改成了“universal”。</p>
+
+<p>4.config.toml文件</p>
+
+<p>在前面说了刚建好的hugo目录里面是没有这个文件的，安装好主题后会自带的。具体位置在“themes/universal/exampleSite”文件夹里，把它拷贝到hugo文件夹根目录下。不要忘了在config.toml里面把对应的主题名称改成在第3步修改好的。具体看图：</p>
+
+<p><img src="https://ooo.0o0.ooo/2017/11/23/5a16449e32e04.png" alt="" /></p>
+
+<h2 id="本地预览">本地预览</h2>
+
+<p>cd到hugo目录，输入一下命令，就行看到主题安装后的本地效果：</p>
+
+<pre><code>$ hugo server --themes=universal
+</code></pre>
+
+<p>在浏览器输入localhost:1313，就可以看到我们刚刚创建的页面。</p>
+
+<h2 id="个人小结">个人小结</h2>
+
+<p>这样，一个简陋的个人静态网站就搭建好了，不过是在本地，别人在网上还搜不到。可以先在本地修改好config.toml文件，然后写好几篇博文放在content目录，等在本地调试的有模有样了，接下来我们就可以把个人网站托管到服务器，别人就可以看到我们的网站了。我的网站是托管到GitHub的，具体操作在下篇文章里面讲述，中间自己走了不少弯路。</p>
 
                         </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xtsui-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
 
                     </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/%e6%95%99%e7%a8%8b">教程 (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/%e5%bb%ba%e7%ab%99"><i class="fa fa-tags"></i> 建站</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
 
                 </div>
                 
 
             </div>
-            
-
             
         </div>
         

@@ -2,89 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tsui&#39;s Site | Make Different</title>
-    <link>https://xtsui.github.io/</link>
+    <link>/</link>
     <description>Recent content on Tsui&#39;s Site | Make Different</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017, xtsui.com; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 10 Oct 2015 13:07:31 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 23 Nov 2017 10:52:18 +0800</lastBuildDate>
     
-	<atom:link href="https://xtsui.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Migrate from Jekyll</title>
-      <link>https://xtsui.github.io/blog/2015/10/10/migrate-from-jekyll/</link>
-      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
-      
-      <guid>https://xtsui.github.io/blog/2015/10/10/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
     
     <item>
-      <title>Linked post</title>
-      <link>https://xtsui.github.io/blog/2015/10/02/linked-post/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      <title>快速搭建Hugo静态网站</title>
+      <link>/blog/2017/11/23/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAhugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Thu, 23 Nov 2017 10:52:18 +0800</pubDate>
       
-      <guid>https://xtsui.github.io/blog/2015/10/02/linked-post/</guid>
-      <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
-menu = &amp;quot;main&amp;quot;  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus.</description>
-    </item>
-    
-    <item>
-      <title>Go is for lovers</title>
-      <link>https://xtsui.github.io/blog/2015/09/17/go-is-for-lovers/</link>
-      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
-      
-      <guid>https://xtsui.github.io/blog/2015/09/17/go-is-for-lovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Hugo is for lovers</title>
-      <link>https://xtsui.github.io/blog/2015/08/03/hugo-is-for-lovers/</link>
-      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
-      
-      <guid>https://xtsui.github.io/blog/2015/08/03/hugo-is-for-lovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Creating a new theme</title>
-      <link>https://xtsui.github.io/blog/2015/06/24/creating-a-new-theme/</link>
-      <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
-      
-      <guid>https://xtsui.github.io/blog/2015/06/24/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>/blog/2017/11/23/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAhugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
+      <description>前言小叙 从最开始接触GitHub和静态网站搭建到现在应该也有一两个月了，从一名菜鸟开始摩拳擦掌准备上路了。首先折腾的是通过hexo搭建自己的博客，而且通过好几个星期的摸索，也搭建起了一个有模有样的博客，陆陆续续在上面发布了四五篇文章。但是，几天后当我再次在terminal输入hexo命令时，居然提示无效。顿时一凉，知道麻烦又来了，这是hexo的配置环境出问题了，几乎隔三差五都会出现一次，每次都要花上不少时间去重新配置，这样一来就失去了写博客本身的乐趣了。于是，一怒之下转到了Hugo平台，之前写的几篇文章也没保存了。
+闲言少叙，主要说说通过Hugo搭建静态网站的基本过程。
+前提条件 我是在Mac系统下操作的，首先Hugo的安装相比hexo来说简单多了，通过brew命令.
+1.先安装brew
+$ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  2.再安装Hugo
+$ brew new Hugo  3.建立自己的网站，我这里本地文件夹名称用的是hugo（在你的用户名文件夹的根目录下），可自行修改
+$ hugo new site mysite  然后在本地Hugo文件夹中就会出现以下目录文件
+ ▸ archetypes/ ▸ content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ themes/  这几个文件夹的作用分别是：
+ archetypes：包括内容类型，在创建新内容时自动生成内容的配置 content：包括网站内容，全部使用markdown格式 data: 包括网站模版的一些数据，有的模版没有 layouts：包括了网站的模版，决定内容如何呈现 static：包括了css, js, fonts, media等，决定网站的外观 themes：存放网站模版，也就是主题的位置  注意下，这个时候里面没有config.toml这个文件，怎么解决后面会说到
+安装主题 1.先到这个地址选一个自己喜欢的模版，里面的主题数量也不少，对于一般的爱好者来说足够了，如果你有能力也可以自己写一个。在选中的模版里面有个说明文件的，安装方法很简单。
+2.首先在terminal里面进到刚创建的网站目录，比如我的是hugo：
+$ cd hugo  然后再cd到主题安装目录：
+$ cd themes  最后在这个路径下，用一下命令来安装你所选中的主题，比如我的是universal主题：
+$ git clone https://github.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://xtsui.github.io/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xtsui.github.io/contact/</guid>
-      <description>We are here to help you Are you curious about something? Do you have some kind of problem with our products? As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.
-Please feel free to contact us, our customer service center is working for you 24&amp;frasl;7.</description>
+      <guid>/contact/</guid>
+      <description>我一直在这里等你哦 如果你和我一样对任何事都保持着一颗强烈的好奇心，又想保持自己独立思考的能力，那么，我想我们还是有些话题可以聊一聊的。不管是男人还是女人，不管是新新人类还是非人类，只要有话题，我都能陪你聊。前几天看到这样一句话，觉得有点意思，记在这里一起分享。 &amp;gt; Plan in decades. Think in years. Work in months. Live in days.
+听说你想和我取得联系？ 直接在下面的表单中提交你的问题吧！</description>
     </item>
     
     <item>
       <title>FAQ</title>
-      <link>https://xtsui.github.io/faq/</link>
+      <link>/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xtsui.github.io/faq/</guid>
-      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
+      <guid>/faq/</guid>
+      <description> 人的好奇心总是无穷尽的，进到这么好看的一个个人网站，你心中一定有不少问题想问，希望自己也能做出一个这么酷炫的网站出来。如果你和我一样不是科班出身，但是对这块内容有着浓厚的兴趣，而且有一定的动手、动脑和搜索能力，那么，我相信一星期内你也能做出一个像我这样甚至更好的看的网站出来。下面我会分享几个常见的问题，避免入坑。
+1、建设一个这样的网站需要哪些基本条件？  懂一点markdown 有翻越“伟大的城墙”的工具； 英文能力能够阅读基本的说明文档； 看到代码等计算机相关的术语和元素不晕头； 不懂就问、肯琢磨问题、会使用Google搜索； 其他的想到了再补充。  2、这个网站用到了哪些软件或服务？  个人域名GoDaddy 建站工具Hugo； 网站内容托管服务器GitHub； 内容编辑软件MacDown 内容上传工具SourceTree； 具体怎么使用到对应网址里面去学习官方文档吧。  3、你建设这样一个网站的目的是什么？ 我是一名文科生，建设个人网站完全是出于个人兴趣，难道你不觉得拥有一个自己的网站是一件很酷的事吗？其实第一次接触建站是在大学的dreamweaver课堂上，但那时候还只是初步觉得原来通过一些看起来枯燥的数字和符号就能够转化出这么直观的内容。自己第一次上手操作是在2012年和小伙伴一起创业时做自己的官网，把自己关在房间里捣鼓了整整一个星期，弄出了一个还算像样的网站，可惜那个现在网站没运营了。但通过那次捣鼓开始接触了div、css、js等非常有用的技术。中间也尝试过用Wordpress建站，但由于繁琐就搁置了。前阵子心血来潮买了一个十年期限的域名xtsui.com，想着这事不能再拖了，于是开始琢磨和研究，就捣鼓出了现在的网站，主要用来记录和分享，希望能打造出一个自己的品牌。
+4、建设一个这样的网站需要花多长时间？ 这要看你想达到什么样的效果，如果只是搭建起基本的框架，包括运行环境、主题、logo设计、购买域名、上传基本内容到GitHub等，类似房屋装修的毛坯一样，看个人能力，一星期内基本足够。但是如果需要完善的有血有肉有个性的话，那就需要慢慢打磨了。我在写下这个页面时就处于“毛坯”状态。不过，这样一来也就有乐趣了，因为你看到每次改完后的效果会有一种小小的成就感。
+5. 能否简单介绍下你自己？  1990年生人，但不喜欢被贴上“90后”的标签，双子座，有自己的想法； 传媒专业毕业，干过媒体，有过创业，现正行走在实现自由人生的道路上； 籍贯湖南，有着湘军的特点“霸得蛮”，怀着一颗“初生牛犊不怕虎”的心，勇闯天涯； 目前主要从事主持工作，坐标杭州，业余做一做播音主持相关的培训工作； 目前掌握了中、英、法三门语言，虽然法语仍在继续学习当中，但基本的交流已无大碍； 逐渐成为一名极简主义者，希望在10年内能创立自己的品牌，至于是什么，天晓得。   如果你没有找到自己想要的答案，请不要犹豫，马上联系吧，我很高兴为你“排忧解难”。
+ </description>
     </item>
     
   </channel>

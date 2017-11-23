@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Tsui&#39;s Site | Make Different</title>
-    <link>/blog/</link>
-    <description>Recent content in Blogs on Tsui&#39;s Site | Make Different</description>
+    <title>建站 on Tsui&#39;s Site | Make Different</title>
+    <link>/tags/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on Tsui&#39;s Site | Make Different</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017, xtsui.com; all rights reserved.</copyright>
     <lastBuildDate>Thu, 23 Nov 2017 10:52:18 +0800</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

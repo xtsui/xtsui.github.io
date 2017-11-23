@@ -3,118 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xtsui.github.io/blog/2015/10/10/migrate-from-jekyll/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <loc>/blog/2017/11/23/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAhugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2017-11-23T10:52:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/blog/2015/10/02/linked-post/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/blog/2015/09/17/go-is-for-lovers/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/blog/2015/08/03/hugo-is-for-lovers/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/blog/2015/06/24/creating-a-new-theme/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/blog/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <loc>/blog/</loc>
+    <lastmod>2017-11-23T10:52:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/contact/</loc>
+    <loc>/contact/</loc>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/faq/</loc>
+    <loc>/faq/</loc>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/tags/go/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/tags/golang/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2017-11-23T10:52:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/tags/hugo/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2017-11-23T10:52:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xtsui.github.io/tags/ipsum/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/categories/lorem/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/tags/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/categories/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/categories/pseudo/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/categories/starting/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/tags/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/tags/theme/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xtsui.github.io/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <loc>/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2017-11-23T10:52:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
