@@ -18,20 +18,9 @@
       <pubDate>Thu, 23 Nov 2017 10:52:18 +0800</pubDate>
       
       <guid>/blog/2017/11/23/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAhugo%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
-      <description>前言小叙 从最开始接触GitHub和静态网站搭建到现在应该也有一两个月了，从一名菜鸟开始摩拳擦掌准备上路了。首先折腾的是通过hexo搭建自己的博客，而且通过好几个星期的摸索，也搭建起了一个有模有样的博客，陆陆续续在上面发布了四五篇文章。但是，几天后当我再次在terminal输入hexo命令时，居然提示无效。顿时一凉，知道麻烦又来了，这是hexo的配置环境出问题了，几乎隔三差五都会出现一次，每次都要花上不少时间去重新配置，这样一来就失去了写博客本身的乐趣了。于是，一怒之下转到了Hugo平台，之前写的几篇文章也没保存了。
-闲言少叙，主要说说通过Hugo搭建静态网站的基本过程。
-前提条件 我是在Mac系统下操作的，首先Hugo的安装相比hexo来说简单多了，通过brew命令.
-1.先安装brew
-$ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  2.再安装Hugo
-$ brew new Hugo  3.建立自己的网站，我这里本地文件夹名称用的是hugo（在你的用户名文件夹的根目录下），可自行修改
-$ hugo new site mysite  然后在本地Hugo文件夹中就会出现以下目录文件
- ▸ archetypes/ ▸ content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ themes/  这几个文件夹的作用分别是：
- archetypes：包括内容类型，在创建新内容时自动生成内容的配置 content：包括网站内容，全部使用markdown格式 data: 包括网站模版的一些数据，有的模版没有 layouts：包括了网站的模版，决定内容如何呈现 static：包括了css, js, fonts, media等，决定网站的外观 themes：存放网站模版，也就是主题的位置  注意下，这个时候里面没有config.toml这个文件，怎么解决后面会说到
-安装主题 1.先到这个地址选一个自己喜欢的模版，里面的主题数量也不少，对于一般的爱好者来说足够了，如果你有能力也可以自己写一个。在选中的模版里面有个说明文件的，安装方法很简单。
-2.首先在terminal里面进到刚创建的网站目录，比如我的是hugo：
-$ cd hugo  然后再cd到主题安装目录：
-$ cd themes  最后在这个路径下，用一下命令来安装你所选中的主题，比如我的是universal主题：
-$ git clone https://github.</description>
+      <description>&lt;p&gt;从最开始接触GitHub和静态网站搭建到现在应该也有一两个月了，从一名菜鸟开始摩拳擦掌准备上路了。首先折腾的是通过hexo搭建自己的博客，而且通过好几个星期的摸索，也搭建起了一个有模有样的博客，陆陆续续在上面发布了四五篇文章。但是，几天后当我再次在terminal输入hexo命令时，居然提示无效。顿时一凉，知道麻烦又来了，这是hexo的配置环境出问题了，几乎隔三差五都会出现一次，每次都要花上不少时间去重新配置，这样一来就失去了写博客本身的乐趣了。于是，一怒之下转到了Hugo平台。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
