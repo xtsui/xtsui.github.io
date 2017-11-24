@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>/blog/2015/06/24/creating-a-new-theme/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/</loc>
     <lastmod>2017-11-23T10:52:18+08:00</lastmod>
     <priority>0</priority>
@@ -79,12 +74,6 @@
   <url>
     <loc>/categories/pseudo/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/starting/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
